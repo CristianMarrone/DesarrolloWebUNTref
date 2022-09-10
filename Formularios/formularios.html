@@ -20,7 +20,7 @@
             <label for="">Edad</label>
             <input name="edad" type="number" placeholder="40" min="1" max="99">
             <label for="">Email</label>
-            <input name="email" type="email" placeholder="ejemplo@ejemplo.com">
+            <input name="email" required type="email" placeholder="ejemplo@ejemplo.com">
             <label for="">País</label>
             <select>
                 <option value="">Argentina</option>
@@ -36,7 +36,7 @@
         </form>
     </section>
     <section>
-        <h1>Formularios</h1>
+        <h1>Tarjeta de crédito</h1>
         <form action="http://localhost:8000/" method="POST">
             <input name="nombre" type="text" placeholder="Tu nombre como figura en la tarjeta">
             <input name="tarjeta" type="number" placeholder="Numero en la tarjeta">
@@ -44,6 +44,24 @@
             <input name="vencimiento_anio" type="number" placeholder="Año vencimiento">
             <input name="codigo" type="password" placeholder="Código de seguridad">
             <!--<input type="submit" value="Enviar">-->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <form action="http://localhost:8000/">
+            <h1>Plan Móvil</h1>
+            <input name="nombre" type="text" placeholder="Tu nombre">
+            <input name="apellido" type="text" placeholder="Tu apellido">
+            <input name="edad" type="number" placeholder="Tu edad" min="1" max="99">
+            <input name="email" type="email" placeholder="Tu email">
+            <label for="">Elegí tu plan</label>
+            <select name="plan">
+                <option value="plan-1">50MB</option>
+                <option value="plan-1">100GB</option>
+                <option value="plan-1">1000GB</option>
+                <option value="plan-1">100TB</option>
+            </select>
+            <label for="">Tu consulta</label>
             <button type="submit">Enviar</button>
         </form>
     </section>
@@ -57,6 +75,50 @@
             <button type="submit" href="">Enviar</button>
         </form>
     </section>
+    <section>
+        <form action="">
+            <label for="">Fecha</label>
+            <input type="date">
+            <label for="">Fecha y Hora</label>
+            <input type="datetime">
+            <label for="">Desea aceptar los términos y condiciones</label>
+            <input type="checkbox">
+            <hr>
+            <label for="">Adjuntar un Archivo</label>
+            <input type="file">
+            <select name="" id="">
+                <optgroup label="Centro">
+                    <option>Buenos Aires</option>
+                    <option>Mendoza</option>
+                    <option>La Pampa</option>
+                </optgroup>
+                <option>Misiones</option>
+                <option>Chaco</option>
+                <option>Chubut</option>
+                <option>Cordoba</option>
+                <option>COrrientes</option>
+                <option>Entre Rios</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Rioja</option>
+            </select>
+        </form>
+    </section>
+    <section>
+        <form action="http://localhost:8000">
+            <label>En que año estamos</label>
+            <label>
+                <input name="pregunta1" type="radio" value="2020">2020
+            </label>
+            <label>
+                <input name="pregunta1" type="radio" value="2021">2021
+            </label>
+            <label>
+                <input name="pregunta1" type="radio" value="2022">2022
+            </label>
+        </form>
+    </section>
+
 </body>
 
 </html>
